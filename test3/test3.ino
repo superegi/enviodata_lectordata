@@ -1,5 +1,4 @@
 
-
 /*********
   Rui Santos
   Complete project details at https://randomnerdtutorials.com/esp8266-dht11dht22-temperature-and-humidity-web-server-with-arduino-ide/
@@ -18,7 +17,7 @@
 const char* ssid = "Pieza_fondo";  // Enter SSID here
 const char* password = "no se la clave";  //Enter Password here
 
-#define DHTPIN 5     // Digital pin connected to the DHT sensor
+#define DHTPIN 15     // Digital pin connected to the DHT sensor
 
 // Uncomment the type of sensor in use:
 //#define DHTTYPE    DHT11     // DHT 11
