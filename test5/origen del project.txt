@@ -1,0 +1,7 @@
+https://www.instructables.com/id/PART-1-Send-Arduino-data-to-the-Web-PHP-MySQL-D3js/
+
+la idea es enviar por ethernet info con data a una mysql por php.
+
+esto debo cambiarlo para que sea por wifi
+
+

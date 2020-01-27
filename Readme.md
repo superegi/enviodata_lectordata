@@ -20,4 +20,28 @@ Al correr el script hay que asegurarse de desconectar-conectar el sensor, dado q
 
 Para el ejemplo utilizo GND, 3v3, D8 (que corresponde a GPIO15)
 
-![Nodeconectado]('./Node_conectado.jpg')
+![Nodeconectado]('./test3/Node_conectado.jpg')
+
+
+## instalo mycopython
+
+https://www.prometec.net/micropython-nodemcu/
+http://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware
+
+
+uso esto para aprender
+
+https://www.digikey.com/en/maker/projects/micropython-basics-load-files-run-code/fb1fcedaf11e4547943abfdd8ad825ce
+
+sigo este codigo
+https://dev.to/bocajnotnef/intro-to-working-with-with-esp8266-3bno
+https://dev.to/bocajnotnef/receiving-data-from-esp8266-sensors-3n5e
+
+comando para copiar
+ampy --port /dev/ttyUSB0 put main.py
+
+screen /dev/ttyUSB0 115200
+
+ctl+a, luego d para deattach.
+screen -r para attach a esa sesion
+
