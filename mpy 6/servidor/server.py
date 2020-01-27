@@ -128,7 +128,7 @@ class DBWriter(threading.Thread):
                 avg_temp /= list_len
                 avg_hum /= list_len
                 avg_soil /= list_len
-                timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
                 values = f" ('{key}', {avg_temp}, {avg_hum}, {avg_soil}, '{timestamp}')"
                 print(f"Writing {values} to DB")
