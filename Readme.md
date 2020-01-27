@@ -16,7 +16,7 @@ Hay que tener cuidado con los pines y el mapa. Tuve ciertos problemas al conecta
 
 También cuidado con no cargar el script con los pines conectados, ya que hay caída de tensión.
 
-Al correr el escript hay que asegurarse de desconectar-conectar el sensor, dado que la lectura se asigna con sudo cada vez que se corre. Si se desconecta y conecta.... se pierde la asignación del serial y se crea una nueva
+Al correr el script hay que asegurarse de desconectar-conectar el sensor, dado que la lectura se asigna con sudo cada vez que se corre. Si se desconecta y conecta.... se pierde la asignación del serial y se crea una nueva (bueno al final no funcionó....)
 
 Para el ejemplo utilizo GND, 3v3, D8 (que corresponde a GPIO15)
 
