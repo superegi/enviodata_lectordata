@@ -14,6 +14,7 @@ threads_run = False
 
 CLIENTIP = None
 CLIENTPORT = None
+dormir = 10
 
 CONFIGFILENAME = "configs.cfg"
 
@@ -91,7 +92,7 @@ class DBWriter(threading.Thread):
                            "timestamp text);")
 
         while threads_run:
-            time.sleep(5)
+            time.sleep(dormir)
 
             to_load_into_database = []
             with lock:
@@ -134,7 +135,7 @@ class DBWriter(threading.Thread):
                 print(f"Writing {values} to DB")
                 connection.execute(f"INSERT INTO readings VALUES {values};")
             connection.commit()
-            print('Escuchando en:', CLIENTPORT, ':', CLIENTIP)
+            print('Escuchando en:',CLIENTIP, ':', CLIENTPORT)
             print("Sleeping...")
 
         print("DB writer thread exiting.")

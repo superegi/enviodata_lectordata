@@ -11,6 +11,7 @@ NETPASS = None
 SERVIP = None
 SERVPORT = None
 
+dormir = 20
 CONFIGFILENAME = "configs.cfg"
 
 with open(CONFIGFILENAME, 'r') as cfile:
@@ -96,4 +97,4 @@ def do_run():
             socket_connected = False
         print("Sent ", q, " bytes.")
         status_led.off()
-        time.sleep(4)
+        time.sleep(dormir)
