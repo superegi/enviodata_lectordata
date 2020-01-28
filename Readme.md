@@ -45,3 +45,12 @@ screen /dev/ttyUSB0 115200
 ctl+a, luego d para deattach.
 screen -r para attach a esa sesion
 
+## purbo multisocket
+https://realpython.com/python-sockets/
+https://github.com/realpython/materials/tree/master/python-sockets-tutorial
+
+
+
+## finalmente me quedo con la opción 6
+
+
