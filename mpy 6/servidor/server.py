@@ -133,6 +133,8 @@ class DBWriter(threading.Thread):
                 values = f" ('{key}', {avg_temp}, {avg_hum}, {avg_soil}, '{timestamp}')"
                 print(f"Writing {values} to DB")
                 connection.execute(f"INSERT INTO readings VALUES {values};")
+            connection.commit()
+            print('Escuchando en:', CLIENTPORT, ':', CLIENTIP)
             print("Sleeping...")
 
         print("DB writer thread exiting.")
