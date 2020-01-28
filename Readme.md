@@ -54,3 +54,22 @@ https://github.com/realpython/materials/tree/master/python-sockets-tutorial
 ## finalmente me quedo con la opción 6
 
 
+## ahora creo el ervicio en el pc local
+
+https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/
+
+metodo 4
+
+
+[Unit]
+Description=Servicio temp y hum por 555
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/termometros_py/ejecut.sh
+
+
+[Install]
+WantedBy=multi-user.target
+
