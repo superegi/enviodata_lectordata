@@ -19,7 +19,7 @@ with open(CONFIGFILENAME, 'r') as cfile:
     NETNAME = lines[0][:-1]
     NETPASS = lines[1][:-1]
     SERVIP = lines[2][:-1]
-    SERVPORT = int(lines[3][:-1])
+    SERVPORT = int(lines[3])
 
 
 mac = ubinascii.hexlify(network.WLAN().config('mac'), ':').decode()
@@ -67,6 +67,7 @@ def do_run():
                 socket_connected = True
             except OSError:
                 print("Socket connection failed... waiting.")
+		print('Intentando:' ,SERVIP, SERVPORT)
                 # pulse LED to indicate problem
                 status_led.on()
                 time.sleep(0.1)

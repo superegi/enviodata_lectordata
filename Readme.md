@@ -75,5 +75,7 @@ ExecStart=/home/pi/termometros_py/ejecut.sh /home/pi/termometros_py/sample.log 2
 [Install]
 WantedBy=multi-user.target
 
+static ip
+sudo nano /etc/dhcpcd.conf
 
 

@@ -164,6 +164,8 @@ def main():
         threads_run = False
 
     print("Waiting for threads...")
+    print('Escuchando en:',CLIENTIP, ':', CLIENTPORT)
+
 
     for thread in threads:
         thread.join()
