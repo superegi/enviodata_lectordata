@@ -21,7 +21,7 @@ CONFIGFILENAME = "configs.cfg"
 with open(CONFIGFILENAME, 'r') as cfile:
     lines = cfile.readlines()
     CLIENTIP = lines[0][:-1]
-    CLIENTPORT = lines[1][:-1]
+    CLIENTPORT = lines[1]
     CLIENTPORT = int(CLIENTPORT)
 
 
