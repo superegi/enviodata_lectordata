@@ -26,6 +26,7 @@ Para el ejemplo utilizo GND, 3v3, D8 (que corresponde a GPIO15)
 ## instalo mycopython
 
 https://www.prometec.net/micropython-nodemcu/
+
 http://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware
 
 
@@ -35,6 +36,7 @@ https://www.digikey.com/en/maker/projects/micropython-basics-load-files-run-code
 
 sigo este codigo
 https://dev.to/bocajnotnef/intro-to-working-with-with-esp8266-3bno
+
 https://dev.to/bocajnotnef/receiving-data-from-esp8266-sensors-3n5e
 
 comando para copiar
@@ -62,14 +64,16 @@ metodo 4
 
 
 [Unit]
-Description=Servicio temp y hum por 555
+Description=**Servicio temp y hum por 555**
 After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/home/pi/termometros_py/ejecut.sh
+ExecStart=/home/pi/termometros_py/ejecut.sh /home/pi/termometros_py/sample.log 2>&1
 
 
 [Install]
 WantedBy=multi-user.target
+
+
 
